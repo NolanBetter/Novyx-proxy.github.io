@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "PowerShell(gh api repos/MercuryWorkshop/Scramjet-App/contents --jq '.[].name' 2>$null)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:www.npmjs.com)",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\User\\\\OneDrive\\\\Documents\\\\GitHub\\\\Novyx-proxy.github.io\\\\src\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\User\\\\OneDrive\\\\Documents\\\\GitHub\\\\Novyx-proxy.github.io\\\\public\")",
+      "PowerShell(Copy-Item \"c:\\\\Users\\\\User\\\\OneDrive\\\\Documents\\\\GitHub\\\\Novyx-proxy.github.io\\\\index.html\" \"c:\\\\Users\\\\User\\\\OneDrive\\\\Documents\\\\GitHub\\\\Novyx-proxy.github.io\\\\public\\\\index.html\")"
+    ]
+  }
+}
