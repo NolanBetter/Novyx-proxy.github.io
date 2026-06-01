@@ -31,7 +31,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);displ
 ::-webkit-scrollbar-track{background:var(--bg2)}
 ::-webkit-scrollbar-thumb{background:var(--b2);border-radius:4px}
 ::-webkit-scrollbar-thumb:hover{background:var(--a1)}
-
+ 
 /* LOADING */
 #ls{position:fixed;inset:0;z-index:9999;background:linear-gradient(135deg,var(--bg) 0%,var(--bg2) 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px;transition:opacity .5s}
 #ls.out{opacity:0;pointer-events:none}
@@ -44,16 +44,16 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);displ
 .ls-txt{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--t2)}
 .ls-txt.ok{color:var(--a1)}
 .ls-txt.er{color:#ef4444}
-
+ 
 /* BROWSER WINDOW */
 #bw{width:calc(100vw - 0px);height:100vh;background:var(--bg2);display:flex;flex-direction:column;overflow:hidden;position:relative;z-index:1;opacity:0;transition:opacity .4s}
 #bw.vis{opacity:1}
-
+ 
 /* TRAFFIC LIGHTS */
 .tl-row{display:flex;align-items:center;gap:6px;padding:0 6px}
 .tl{width:12px;height:12px;border-radius:50%}
 .tl.r{background:#ff5f56}.tl.y{background:#ffbd2e}.tl.g{background:#27c93f}
-
+ 
 /* TABS BAR */
 #tabsBar{display:flex;align-items:flex-end;padding:8px 12px 0;background:var(--bg3);border-bottom:1px solid var(--b1);gap:3px;overflow-x:auto;flex-shrink:0}
 #tabsBar::-webkit-scrollbar{display:none}
@@ -69,7 +69,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);displ
 @keyframes tbpulse{0%,100%{opacity:1}50%{opacity:.3}}
 #newTabBtn{width:28px;height:28px;background:var(--s1);border:1px solid var(--b1);border-radius:var(--r2) var(--r2) 0 0;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--t2);transition:all .18s;flex-shrink:0;margin-left:2px;align-self:flex-end}
 #newTabBtn:hover{background:var(--a1);color:#000;border-color:var(--a1)}
-
+ 
 /* NAV BAR */
 #navBar{display:flex;align-items:center;gap:8px;padding:10px 14px;background:var(--bg3);border-bottom:1px solid var(--b1);flex-shrink:0}
 .nav-btn{width:32px;height:32px;background:var(--s1);border:1px solid var(--b1);border-radius:var(--r);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;color:var(--t2);transition:all .18s;flex-shrink:0}
@@ -92,12 +92,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);displ
 .mdi.disc{background:linear-gradient(135deg,#5865F2,#4752C4);color:#fff}
 .mdi.disc:hover{background:linear-gradient(135deg,#4752C4,#3C45A5)}
 .mdi-ico{font-size:12px;opacity:.6}
-
+ 
 /* LOAD BAR */
 #lBar{height:3px;background:transparent;flex-shrink:0;overflow:hidden}
 #lBar.act{background:var(--bg3)}
 #lProg{height:100%;background:linear-gradient(90deg,var(--a1),var(--a2));width:0;transition:width .3s ease}
-
+ 
 /* BOOKMARKS */
 #bmBar{display:flex;align-items:center;gap:6px;padding:6px 14px;background:var(--bg3);border-bottom:1px solid var(--b1);overflow-x:auto;flex-shrink:0}
 #bmBar::-webkit-scrollbar{display:none}
@@ -107,11 +107,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);displ
 .bm-del:hover{opacity:1;color:#ef4444}
 .bm-add{display:flex;align-items:center;gap:5px;background:color-mix(in srgb,var(--a1) 10%,transparent);border:1px solid color-mix(in srgb,var(--a1) 25%,transparent);border-radius:5px;padding:3px 10px;cursor:pointer;font-size:11px;color:var(--a1);white-space:nowrap;transition:all .15s}
 .bm-add:hover{background:color-mix(in srgb,var(--a1) 18%,transparent)}
-
+ 
 /* CONTENT */
 #content{flex:1;background:var(--bg3);overflow:hidden;position:relative}
 #content iframe{width:100%;height:100%;border:none;position:absolute;inset:0}
-
+ 
 /* HOME PAGE */
 .home-page{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;padding:40px;text-align:center;overflow-y:auto}
 .home-logo{font-family:'Syne',sans-serif;font-size:52px;font-weight:800;color:var(--t1);line-height:1;margin-bottom:4px}
@@ -131,7 +131,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);displ
 .rec-list{display:flex;flex-wrap:wrap;gap:6px}
 .rec-item{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r);padding:5px 12px;cursor:pointer;font-size:12px;color:var(--t2);transition:all .15s;display:flex;align-items:center;gap:5px}
 .rec-item:hover{border-color:var(--a1);color:var(--a1)}
-
+ 
 /* SETTINGS PAGE */
 .set-page{height:100%;overflow-y:auto;padding:32px 40px}
 .set-title{font-family:'Syne',sans-serif;font-size:32px;font-weight:800;color:var(--t1);margin-bottom:28px;background:linear-gradient(135deg,var(--a1),var(--a2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
@@ -157,7 +157,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);displ
 .cloak-chips{display:flex;gap:7px;flex-wrap:wrap}
 .cchip{padding:6px 11px;border-radius:var(--r);border:1px solid var(--b1);background:var(--bg);font-size:11px;cursor:pointer;color:var(--t2);transition:all .18s}
 .cchip.on{border-color:var(--a1);color:var(--a1);background:color-mix(in srgb,var(--a1) 10%,transparent)}
-
+ 
 /* GAMES PAGE */
 .games-page{height:100%;overflow-y:auto;padding:28px 32px}
 .games-title{font-family:'Syne',sans-serif;font-size:32px;font-weight:800;color:var(--t1);margin-bottom:6px;background:linear-gradient(135deg,var(--a1),var(--a2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
@@ -173,10 +173,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);displ
 .game-card-body{padding:12px 14px}
 .game-card-title{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--t1);margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .game-card-desc{font-size:11px;color:var(--t3);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-
+ 
 /* LUMIN container */
 #games{width:100%;margin-top:8px}
-
+ 
 /* ERROR PAGE */
 .err-page{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:40px;text-align:center}
 .err-ico{font-size:56px;opacity:.5}
@@ -187,7 +187,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);displ
 .btn-p:hover{filter:brightness(1.1)}
 .btn-g{background:var(--s2);border:1px solid var(--b2);border-radius:var(--r);padding:9px 20px;color:var(--t2);font-size:13px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .18s}
 .btn-g:hover{background:var(--s3);color:var(--t1)}
-
+ 
 /* MODAL */
 #modalOverlay{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:2000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
 #modalOverlay.on{display:flex}
@@ -202,18 +202,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t1);displ
 .modal-btn.pri:hover{filter:brightness(1.1)}
 .modal-btn.danger{background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.3);color:#ef4444}
 .modal-btn.danger:hover{background:rgba(239,68,68,.25)}
-
+ 
 /* TOAST */
 #toast{position:fixed;bottom:20px;right:20px;z-index:3000;display:flex;flex-direction:column;gap:7px}
 .toast{background:var(--s2);border:1px solid var(--b2);border-radius:var(--r);padding:9px 14px;font-size:12px;font-weight:500;color:var(--t1);display:flex;align-items:center;gap:7px;box-shadow:0 4px 20px rgba(0,0,0,.4);animation:toastIn .2s ease;max-width:240px}
 @keyframes toastIn{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:translateX(0)}}
-
+ 
 /* NOTIFICATION */
 .notif{position:fixed;bottom:20px;right:20px;padding:14px 20px;background:var(--bg2);border-radius:var(--r);box-shadow:0 4px 16px rgba(0,0,0,.4);z-index:3001;animation:toastIn .3s ease;max-width:360px;font-size:13px}
 .notif.success{border-left:4px solid #27c93f;color:#27c93f}
 .notif.error{border-left:4px solid #ef4444;color:#ef4444}
 .notif.info{border-left:4px solid var(--a1);color:var(--a1)}
-
+ 
 /* BACKGROUND CANVAS */
 #bgc{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5}
 body.perf *{animation:none!important;transition:none!important}
@@ -225,21 +225,21 @@ body.perf #bgc{display:none}
 </head>
 <body>
 <canvas id="bgc"></canvas>
-
+ 
 <!-- LOADING SCREEN -->
 <div id="ls">
   <div class="ls-ring"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34"/></svg></div>
   <div class="ls-logo">Novyx <span>Network</span></div>
   <div class="ls-txt" id="lsTxt">LOADING...</div>
 </div>
-
+ 
 <!-- BROWSER WINDOW -->
 <div id="bw">
   <!-- TABS -->
   <div id="tabsBar">
     <button id="newTabBtn" title="New Tab">+</button>
   </div>
-
+ 
   <!-- NAV BAR -->
   <div id="navBar">
     <div class="tl-row"><div class="tl r"></div><div class="tl y"></div><div class="tl g"></div></div>
@@ -266,17 +266,17 @@ body.perf #bgc{display:none}
       </div>
     </div>
   </div>
-
+ 
   <!-- LOAD BAR -->
   <div id="lBar"><div id="lProg"></div></div>
-
+ 
   <!-- BOOKMARKS -->
   <div id="bmBar"></div>
-
+ 
   <!-- CONTENT -->
   <div id="content"></div>
 </div>
-
+ 
 <!-- MODAL -->
 <div id="modalOverlay">
   <div class="modal">
@@ -285,9 +285,9 @@ body.perf #bgc{display:none}
     <div class="modal-btns" id="mBtns"></div>
   </div>
 </div>
-
+ 
 <div id="toast"></div>
-
+ 
 <script>
 /* ── DATA ── */
 const GAMES=[
@@ -332,7 +332,7 @@ const QUICKLINKS=[
   {label:'Reddit',url:'https://www.reddit.com'},
   {label:'Discord',url:'https://discord.com/app'},
 ];
-
+ 
 /* ── STATE ── */
 function ls(k){return localStorage.getItem('nvx2_'+k);}
 function sv(k,v){localStorage.setItem('nvx2_'+k,typeof v==='object'?JSON.stringify(v):String(v));}
@@ -347,7 +347,7 @@ const S={
   tabIdC:0,
 };
 let tabs=[],activeId=null;
-
+ 
 /* ── SCRAMJET ── */
 let scramjetCtrl=null,baremuxConn=null;
 async function initScramjet(){
@@ -359,7 +359,7 @@ async function initScramjet(){
     baremuxConn=new BareMux.BareMuxConnection('/baremux/worker.js');
   }catch(e){console.warn('Scramjet init failed:',e);scramjetCtrl=null;baremuxConn=null;}
 }
-
+ 
 /* ── TAB CLASS ── */
 class Tab{
   constructor(id){
@@ -367,7 +367,7 @@ class Tab{
     this.hist=[];this.hIdx=-1;this.type='home';
   }
 }
-
+ 
 /* ── INIT ── */
 window.addEventListener('DOMContentLoaded',()=>{
   applyTheme(S.theme,true);applyEffect(S.effect);applyPerf();applyCloak();
@@ -393,7 +393,7 @@ window.addEventListener('DOMContentLoaded',()=>{
   // Boot loading screen
   bootLoadingScreen();
 });
-
+ 
 function bootLoadingScreen(){
   const dur=1500+Math.random()*2000;
   const fail=Math.random()<0.04;
@@ -417,7 +417,7 @@ function finishLoad(){
   ls.classList.add('out');bw.classList.add('vis');
   setTimeout(()=>{ls.style.display='none';newTab();},500);
 }
-
+ 
 /* ── TABS ── */
 function newTab(){
   if(tabs.length>=5){showNotif('Max 5 tabs','error');return;}
@@ -463,7 +463,7 @@ function updateNavBtns(){
   document.getElementById('backBtn').disabled=t.hIdx<=0;
   document.getElementById('fwdBtn').disabled=t.hIdx>=t.hist.length-1;
 }
-
+ 
 /* ── NAVIGATION ── */
 function handleNav(raw){
   if(!raw||!raw.trim())return;
@@ -511,7 +511,7 @@ function refresh(){
   else if(t.type==='settings')openSettings();
   else if(t.type==='games')openGamesPage();
 }
-
+ 
 /* ── PAGES ── */
 function showHome(){
   const t=activeTab();if(!t)return;
@@ -538,7 +538,7 @@ function showHome(){
   document.getElementById('homeSrch').focus();
 }
 function goHome(){const t=activeTab();if(!t)return;showHome();}
-
+ 
 async function renderIframe(url,showLoad){
   const t=activeTab();if(!t)return;
   t.type='iframe';
@@ -572,7 +572,7 @@ async function renderIframe(url,showLoad){
   }
   renderBmBar();
 }
-
+ 
 function showError(){
   const t=activeTab();if(!t)return;
   t.type='error';renderTabsBar();
@@ -587,7 +587,7 @@ function showError(){
       </div>
     </div>`;
 }
-
+ 
 function openGamesPage(){
   const t=activeTab();if(!t)return;
   t.type='games';t.title='Games';t.url='novyx://games';
@@ -650,7 +650,7 @@ function loadGame(href,title){
   c.innerHTML='';c.appendChild(iframe);
   updateNavBtns();
 }
-
+ 
 function openSettings(){
   const t=activeTab();if(!t)return;
   t.type='settings';t.title='Settings';t.url='novyx://settings';
@@ -725,7 +725,7 @@ function renderSettingsPage(){
       </div>
     </div>`;
 }
-
+ 
 /* ── BOOKMARKS ── */
 function renderBmBar(){
   const bar=document.getElementById('bmBar');bar.innerHTML='';
@@ -748,7 +748,7 @@ function delBm(i){
     {text:'Cancel',cls:'sec'},{text:'Delete',cls:'danger',cb:()=>{S.bms.splice(i,1);sv('bms',S.bms);renderBmBar();showNotif('Deleted','success');}}
   ]);
 }
-
+ 
 /* ── LAUNCH MODES ── */
 function blankLaunch(){
   const t=activeTab();const url=t&&t.url&&t.type==='iframe'?t.url:location.href;
@@ -762,7 +762,7 @@ function blobLaunch(){
   window.open(URL.createObjectURL(new Blob([html],{type:'text/html'})),'_blank');
   showNotif('Blob launched','success');
 }
-
+ 
 /* ── SETTINGS ACTIONS ── */
 function applyTheme(id,silent){
   document.body.className='';if(id!=='ember')document.body.classList.add(id);
@@ -803,7 +803,7 @@ function confirmReset(){
     {text:'Reset',cls:'danger',cb:()=>{localStorage.clear();location.reload();}}
   ]);
 }
-
+ 
 /* ── MODAL ── */
 function showModal(title,msg,btns){
   document.getElementById('mTitle').textContent=title;
@@ -816,14 +816,14 @@ function showModal(title,msg,btns){
   });
   document.getElementById('modalOverlay').classList.add('on');
 }
-
+ 
 /* ── NOTIFICATIONS ── */
 function showNotif(msg,type='info'){
   const n=document.createElement('div');n.className='notif '+type;n.textContent=msg;
   document.body.appendChild(n);
   setTimeout(()=>{n.style.opacity='0';n.style.transition='opacity .25s';setTimeout(()=>n.remove(),260);},2500);
 }
-
+ 
 /* ── BACKGROUND ── */
 let bgAnim=null,bgCtx=null;
 function startBg(){
